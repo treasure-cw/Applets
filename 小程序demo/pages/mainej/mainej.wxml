@@ -1,0 +1,13 @@
+<!--pages/mainej/mainej.wxml-->
+<view class="container">
+  <block wx:for="{{[1,2,3,4,5,6,7,8,9]}}">
+    <view class="block"> 
+      <view class="block1">
+        <view class="x">始发站：{{a}} </view>
+        <view class="x">终到站：{{b}}  </view>
+        <view class="x">车次：{{c}}</view>
+      </view>
+      <view class="block2">出发日期：{{d}}</view>
+    </view>
+  </block>
+</view>

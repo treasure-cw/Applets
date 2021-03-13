@@ -1,0 +1,68 @@
+<!--pages/person/person.wxml-->
+<view wx:if="{{view == 'first'}}" class="container">
+  <form class="z" bindsubmit="formSubmit">
+    <view class="user">
+      <image src="/image/用户.png" class="imag1"></image>
+      <view class="userinput"> 
+        <input placeholder="请输入用户名" class="inputuser" name="username"></input>
+      </view>
+    </view>
+    <view class="user1">
+      <image src="/image/密码.png" class="imag1"></image>
+      <view class="userinput"> 
+        <input placeholder="请输入密码" class="inputuser" password type="text" name="pwd"></input>
+      </view>
+    </view>
+    <view class="user2">
+      <image src="/image/身份证.png" class="imag1"></image>
+      <view class="userinput"> 
+        <input placeholder="请输入身份证后四位" class="inputuser" password="{{true}}" type="idcard" name="idcard"></input>
+      </view>
+    </view>
+    <button class="button" form-type="submit">登录</button>
+    <view class="viewloginin">
+    <navigator url="/pages/login/login" class="xxx">注册</navigator>
+    <navigator url="/pages/forget/forget" class="yyy">忘记密码</navigator>
+    </view>
+  </form>
+</view>
+<!--用户界面-->
+<view wx:elif="{{view == 'second'}}"  class="container">
+  <view class="userview">
+    <view class="userview1">
+      <view class="sm">{{username}}</view>
+      <view class="sm1">{{useridcard}}</view>
+    </view>
+    <view bindtap="back" class="back">退出</view>
+  </view>
+  <view class="userview11" bindtap="myinfo">
+    <view class="userview1">乘车人</view>
+    <view class="back"><image class="imag11" src="/image/箭头.png"></image></view>
+  </view>
+   <view class="userview11" bindtap="change">
+    <view class="userview1">修改密码</view>
+    <view class="back"><image class="imag11" src="/image/箭头.png"></image></view>
+  </view>
+</view>
+<!--管理员界面-->
+<view wx:else="{{view == 'third'}}" class="container">
+ <view class="userview">
+    <view class="userview1">
+      <view class="sm">{{username}}</view>
+      <view class="sm1">{{useridcard}}</view>
+    </view>
+    <view bindtap="back" class="back">退出</view>
+  </view>
+  <view class="userview11" bindtap="station">
+    <view class="userview1">站点管理</view>
+    <view class="back"><image class="imag11" src="/image/箭头.png"></image></view>
+  </view>
+  <view class="userview11" bindtap="train">
+    <view class="userview1">车次管理</view>
+    <view class="back"><image class="imag11" src="/image/箭头.png"></image></view>
+  </view>
+  <view class="userview11" bindtap="driver">
+    <view class="userview1">人员管理</view>
+    <view class="back"><image class="imag11" src="/image/箭头.png"></image></view>
+  </view>
+</view>

@@ -1,0 +1,48 @@
+<!--pages/main/main.wxml-->
+<view wx:if="{{view =='first'}}" class="container">
+  <view class="main_con">
+      <image class="imag1" src="/image/gl.png"></image>
+  </view>
+  <view class="search">
+    <form class="formdata" bindsubmit="formsubmit">
+      <view class="picker1">
+        <view>
+          <image class="imag2"src="/image/地址.png"></image>
+          <text class="start">出发地</text>
+        </view>
+        <picker name="chufa" model="selector" range="{{position}}" value="{{position1}}" bindchange="pick1">
+          <view class="start1" >当前选择：{{position1}}</view>
+        </picker>
+        <view>
+          <image class="imag2"src="/image/地址.png"></image>
+          <text class="start">目的地</text>
+        </view>
+        <picker name="mudi" model="selector" range="{{position}}"  value="{{position2}}" bindchange="pick2">
+          <view class="start1" >当前选择：{{position2}}</view>
+        </picker>
+        <view>
+          <image class="imag22"src="/image/日期.png"></image>
+          <text class="start">出发日期</text>
+        </view>
+        <picker name="riqi" mode="date" value="{{data}}" start="{{started}}" end="{{ended}}" bindchange="pick3">
+          <view class="start1" >当前选择：{{data1}}</view>
+        </picker>
+      </view>
+      <button form-type="submit"  class="buttonsearch" disabled="{{false}}">查询车次</button>
+    </form>
+  </view>
+</view>
+
+<view  wx:if="{{view == 'second'}}" class="container">
+  <block wx:for="{{array}}">
+  <navigator url="/pages/buy/buy?s1={{position1}}&&s2={{position2}}&&busid={{item[0]}}&&date={{data1}}&&time={{item[1]}}&&mails={{item[2]}}&&st1={{item[3]}}&&st2={{item[4]}}" class="block">
+      <view class="block1">
+        <view class="x">始发：{{position1}} </view>
+        <view class="x">终到：{{position2}}  </view>
+        <view class="x">车次：{{item[0]}}</view>
+      </view>
+      <view class="block2">出发日期：{{data1}}|{{item[1]}}</view>
+  </navigator>
+  </block>
+  <button bindtap="but"> 返回</button>
+</view>

@@ -1,0 +1,14 @@
+<view class="container">
+  <form class="z" bindsubmit="formSubmit">
+
+    <view class="user1">
+      <image src="/image/密码.png" class="imag1"></image>
+      <view class="userinput"> 
+        <input placeholder="请输入新密码" class="inputuser" name="pwd" password type="text"></input>
+      </view>
+    </view>
+    <button class="button" form-type="submit">修改</button>
+    <view class="viewloginin">
+    </view>
+  </form>
+</view>

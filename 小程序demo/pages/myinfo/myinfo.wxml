@@ -1,0 +1,5 @@
+<view class="container">
+  <image src="/image/头像.png"></image>
+  <view class="xx" >乘车人：{{name}}</view>
+  <view class="xx1">身份证号：{{idc}}</view>
+</view>

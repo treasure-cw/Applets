@@ -1,0 +1,12 @@
+<view  class="container">
+  <block wx:for="{{array}}">
+    <view class="block"> 
+      <view class="block1">
+        <view class="x">始发：{{item[1]}} </view>
+        <view class="x">终到：{{item[2]}}  </view>
+        <view class="x">车次：{{item[0]}}</view>
+      </view>
+      <view class="block2">出发日期：{{item[3]}}|{{item[4]}}</view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,16 @@
+<!--pages/drivermanager/drivermanager.wxml-->
+<view  class="container">
+  <block wx:for="{{array}}">
+    <view class="block"> 
+      <view class="block1">
+        <view class="x">姓名:{{item[1]}}</view>
+        <view class="x">年龄:{{item[3]}}y</view>
+        <view class="x">工龄:{{item[4]}}y</view>
+      </view>
+      <view class="block1">
+        <view class="y">等级:{{item[5]}} </view>
+        <view class="y">工资:{{item[6]}}￥</view>
+      </view>
+    </view>
+  </block>
+</view>

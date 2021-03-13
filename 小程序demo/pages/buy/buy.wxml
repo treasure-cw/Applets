@@ -1,0 +1,12 @@
+<view class="container">
+  <block wx:for="{{['A','B','C','D']}}"  wx:for-item="i">
+    <view class='hen' >
+       <text class="aaaa">{{i}}</text>
+      <block wx:for="{{['1','2','3']}}"  wx:for-item="j">
+        <text>{{j}}</text>
+        <image wx:if="{{i+j == array[0]||i+j == array[1]||i+j == array[2]||i+j == array[3]||i+j == array[4]||i+j == array[5]||i+j == array[6]||i+j == array[7]||i+j == array[8]||i+j == array[9]||i+j == array[10]||i+j == array[11]}}" src="/image/座位 (1).png" class='imag2' bindtap="warm"></image>
+        <image wx:else src="/image/座位.png" class='imag2' bindtap="buytic" data-la="{{i+j}}"></image>
+      </block>
+    </view>
+  </block>
+</view>

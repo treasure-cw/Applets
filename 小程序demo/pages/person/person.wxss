@@ -1,0 +1,140 @@
+/* pages/person/person.wxss */
+page{
+  height: 100%;
+  background-size:100%;
+ }
+ .z{
+   width: 100%;
+   height: 100%;
+ }
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:#f8faf6;
+}
+.fff{
+  height: 100%;
+  width: 100%;
+}
+.user{
+  width: 94%;
+  height: 90rpx;
+  display: flex;
+  background-color: #ffffff;
+  border: 2rpx solid #000000;
+  border-radius: 50rpx;
+  margin: 0 auto;
+  margin-top: 18%;
+}
+.user1{
+  width: 94%;
+  height: 90rpx;
+  display: flex;
+  background-color: #ffffff;
+  border: 2rpx solid #000000;
+  border-radius: 50rpx;
+  margin: 0 auto;
+  margin-top: 7%;
+}
+.user2{
+  width: 94%;
+  height: 90rpx;
+  display: flex;
+  background-color: #ffffff;
+  border: 2rpx solid #000000;
+  border-radius: 50rpx;
+  margin: 0 auto;
+  margin-top: 7%;
+}
+.imag1{
+  height: 50rpx;
+  width: 50rpx;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+  margin-left: 25rpx;
+}
+
+.userinput{
+  height: 100%;
+  width: 80%;
+  background-color: #ffffff;
+  
+}
+.inputuser{
+  height: 100%;
+  font-size: 40rpx;
+}
+.button{
+  width: 80%;
+  height: 80rpx;
+  margin-top: 10%;
+  border: 2rpx solid #000000;
+}
+.viewloginin{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  margin-top: 30rpx;
+}
+.xxx{
+  color: #13227a;
+  margin-left: 7%;
+}
+.yyy{
+  color: #13227a;
+  margin-left: 60%;
+}
+.userview{
+  height: 15%;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  border: 2rpx solid #000000;
+}
+.userview1{
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.back{
+
+  width: 10%;
+  height: 100%;
+  color:#13227a;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+.sm{
+
+  height: 50%;
+  color:black;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.sm1{
+  height: 50%;
+  color: gray;
+}
+.imag11{
+
+  height: 45rpx;
+  width: 45rpx;
+}
+.userview11{
+  height: 15%;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  border: 2rpx solid #000000;
+  margin-top: 10%;
+}

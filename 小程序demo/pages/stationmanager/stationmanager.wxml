@@ -1,0 +1,13 @@
+<!--pages/stationmanager/stationmanager.wxml-->
+<view  class="container">
+  <block wx:for="{{array}}">
+    <view class="block"> 
+      <view class="block1">
+        <view class="x">站点id：{{item[0]}} </view>
+        <view class="x">站点名：{{item[1]}}  </view>
+      </view>
+    </view>
+  </block>
+   <button bindtap="but"> 增加</button>
+</view>
+

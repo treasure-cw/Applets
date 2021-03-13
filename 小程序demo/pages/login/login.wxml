@@ -1,0 +1,26 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <form class="z" bindsubmit="formSubmit">
+    <view class="user">
+      <image src="/image/用户.png" class="imag1"></image>
+      <view class="userinput"> 
+        <input placeholder="请输入用户名" class="inputuser" name="username"></input>
+      </view>
+    </view>
+    <view class="user1">
+      <image src="/image/密码.png" class="imag1"></image>
+      <view class="userinput"> 
+        <input placeholder="请输入密码" class="inputuser" name="pwd" password type="text"></input>
+      </view>
+    </view>
+    <view class="user2">
+      <image src="/image/身份证.png" class="imag1"></image>
+      <view class="userinput"> 
+        <input placeholder="请输入身份证" class="inputuser" name="idcard" password="{{true}}" type="idcard"></input>
+      </view>
+    </view>
+    <button class="button" form-type="submit">注册</button>
+    <view class="viewloginin">
+    </view>
+  </form>
+</view>

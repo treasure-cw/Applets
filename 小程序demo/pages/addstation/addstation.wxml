@@ -1,0 +1,14 @@
+<!--pages/addstation/addstation.wxml-->
+<view class="container">
+  <form class="z" bindsubmit="formSubmit">
+    <view class="user">
+      <image src="/image/地址.png" class="imag1"></image>
+      <view class="userinput"> 
+        <input placeholder="请输入站点名" class="inputuser" name="stationname"></input>
+      </view>
+    </view>
+    <button class="button" form-type="submit">添加</button>
+    <view class="viewloginin">
+    </view>
+  </form>
+</view>

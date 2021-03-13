@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/person/person",
+    "pages/ticket/ticket",
+    "pages/login/login",
+    "pages/forget/forget",
+    "pages/drivermanager/drivermanager",
+    "pages/stationmanager/stationmanager",
+    "pages/trainmanager/trainmanager",
+    "pages/changepw/changepw",
+    "pages/myinfo/myinfo",
+    "pages/mainej/mainej",
+    "pages/buy/buy",
+    "pages/addstation/addstation"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f8faf6",
+    "navigationBarTitleText": "客运售票",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f8faf6"
+  },
+  "tabBar": {
+    "selectedColor": "#13227a",
+    "backgroundColor": "#f8faf6",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "购票",
+        "iconPath": "image/main.png",
+        "selectedIconPath": "image/mainSelect.png"
+      },
+      {
+        "pagePath": "pages/ticket/ticket",
+        "text": "行程",
+        "iconPath": "image/ticket.png",
+        "selectedIconPath": "image/ticketSelect.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我的",
+        "iconPath": "image/person.png",
+        "selectedIconPath": "image/personSelect.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
